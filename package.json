@@ -5,7 +5,7 @@
   "main": "appexpress.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon appexpress.js"
+    "start": "node appexpress.js"
   },
   "author": "",
   "license": "ISC",
