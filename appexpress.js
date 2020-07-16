@@ -17,4 +17,4 @@ app.get('/api/client/:id',(req,res)=> res.send(req.params.id+" "+req.param.type+
 
 const PORT = 5000;
 
-app.listen(PORT,() => console.log(`Server running port ${PORT}`));
+app.listen( process.env.PORT || PORT,() => console.log(`Server running port ${PORT}`));
