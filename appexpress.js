@@ -4,7 +4,9 @@ var path=require('path');
 var client=require('./api/client');
 const app=express();
 
-
+app.get('/', function(req, res){
+    res.redirect('/api/client');
+ });
 
 app.get('/api/client',(req,res)=>{
 console.log(client);
