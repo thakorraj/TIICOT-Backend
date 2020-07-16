@@ -2,7 +2,9 @@ const express=require('express');
 var fs=require('fs');
 var path=require('path');
 var client=require('./api/client');
+const cors=require('cors');
 const app=express();
+app.use(cors());
 
 app.get('/', function(req, res){
     res.redirect('/api/client');
